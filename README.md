@@ -4,7 +4,8 @@ Atmosphere is a premium, animated weather dashboard (Diamond Edition) featuring 
 
 ## 🚀 Live Demo & Screenshots
 
-* **Live Demo:** [Insert your live hosting URL here, e.g., Vercel, GitHub Pages]
+* **Live Demo:** <br>
+* (https://weather-api-theta-beryl.vercel.app/)
 
 ### Screenshots
 
