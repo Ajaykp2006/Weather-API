@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atmosphere - Premium Animated Weather Dashboard Diamond Edition">
+  <title>Atmosphere - Diamond Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="day-clear">
+
+  <div class="location-bg" id="location-bg"></div>
+  <div class="bg-layer"></div>
+  <div class="particles" id="particles"></div>
+
+  <main class="perspective-container">
+    <article class="dashboard" id="dashboard">
+      
+      <div id="overlay-msg">
+        <div class="spinner" id="spinner"></div>
+        <span id="overlay-text">Calibrating Diamond Atmosphere...</span>
+      </div>
+
+      <section class="main-panel">
+        <header class="top-controls">
+          <div class="search-bar">
+            <button id="geo-btn" aria-label="Use Current Location" title="Use My Location">📍</button>
+            <input type="text" id="search-input" placeholder="Search country, city, zip..." spellcheck="false" aria-label="Search location">
+            <button id="search-btn" aria-label="Search">🔍</button>
+          </div>
+          <button class="unit-btn" id="unit-btn" aria-label="Toggle Temperature Unit">°C</button>
+        </header>
+
+        <div class="weather-hero fade-content" id="hero-content">
+          <div class="greeting" id="greeting">Good Morning</div>
+          <img src="" alt="Condition" class="hero-icon" id="hero-icon">
+          <div class="hero-temp" id="hero-temp">--°</div>
+          <h1 class="hero-city" id="hero-city">--</h1>
+          <div class="hero-time" id="hero-time">--:-- --</div>
+          <div class="hero-desc" id="hero-desc">--</div>
+        </div>
+      </section>
+
+      <section class="data-panel fade-content" id="data-content">
+        <div>
+          <h2 class="section-title">24-Hour Forecast</h2>
+          <div class="hourly-strip" id="hourly-strip"></div>
+        </div>
+
+        <div>
+          <h2 class="section-title">Current Conditions</h2>
+          <div class="metrics-grid">
+            <div class="metric-box">
+              <div class="m-icon">😷</div>
+              <div class="m-info">
+                <span class="m-label">Air Quality (AQI)</span>
+                <span class="m-val" id="m-aqi">--</span>
+                <span class="m-sub" id="m-aqi-status">--</span>
+              </div>
+            </div>
+            <div class="metric-box">
+              <div class="m-icon">🌡️</div>
+              <div class="m-info">
+                <span class="m-label">Feels Like</span>
+                <span class="m-val" id="m-feels">--°</span>
+              </div>
+            </div>
+            <div class="metric-box">
+              <div class="m-icon">💧</div>
+              <div class="m-info">
+                <span class="m-label">Humidity</span>
+                <span class="m-val" id="m-humidity">--%</span>
+              </div>
+            </div>
+            <div class="metric-box">
+              <div class="m-icon">💨</div>
+              <div class="m-info">
+                <span class="m-label">Wind</span>
+                <span class="m-val" id="m-wind">--</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title">7-Day Forecast</h2>
+          <div class="daily-list" id="daily-list"></div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
